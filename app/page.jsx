@@ -18,7 +18,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By <LoginBtn />
             {/* ロゴとbyの間にスペースを追加するため。テキストとしては認識されない 見た目は変わらなかった*/}
           </a>
         </div>
