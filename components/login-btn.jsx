@@ -22,6 +22,7 @@ export default function LoginBtn() {
           width={37}
           height={37}
           alt="user image"
+          className="inline-block motion-reduce:transform-none transition-transform group-hover:translate-x-1"
         />
         <br />
         <button onClick={() => signOut()}>Sign out</button>
