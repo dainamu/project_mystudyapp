@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import LoginBtn from "./components/login-btn";
+import LoginBtn from "../components/login-btn";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -12,15 +12,8 @@ export default function Home() {
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           {/**target=_blank 別タブで開く */}
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By <LoginBtn />
-            {/* ロゴとbyの間にスペースを追加するため。テキストとしては認識されない 見た目は変わらなかった*/}
-          </a>
+          <LoginBtn />
+          {/* ロゴとbyの間にスペースを追加するため。テキストとしては認識されない 見た目は変わらなかった*/}
         </div>
       </div>
 
