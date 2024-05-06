@@ -4,6 +4,8 @@ import Image from "next/image";
 import LoginBtn from "../components/login-btn";
 import Link from "next/link";
 export default function Home() {
+  const d = new Date();
+  console.log(d);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -35,13 +37,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
+            Record{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+            学習内容を記録します。
           </p>
         </Link>
 
