@@ -15,7 +15,15 @@ const ContentSchema = new Schema(
       required: [true, "tag is required."],
     },
   },
-  { timestamps: true }
+  {
+    timestamps: {
+      currentTime: () => {
+        var dt = new Date();
+        dt.setHours(dt.getHours() + 9);
+        return dt;
+      },
+    },
+  }
 );
 
 const Content = models.Content || model("Content", ContentSchema);
